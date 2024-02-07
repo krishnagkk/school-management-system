@@ -1,0 +1,29 @@
+<!-- student-modal.component.html -->
+<div>
+  <h2 mat-dialog-title class="text-center">{{ data.name }}</h2>
+  <div mat-dialog-content>
+    <div class="d-flex justify-content-between">
+      <div>
+        <img [src]="data.image" alt="Student Image" width="150">
+      </div>
+      <div>
+        <p>Roll Number: <b>{{ data.roll_no }}</b></p>
+        <p>Class: <b>{{ data.class_name }}</b></p>
+        <p>Year: <b>{{ data.year }}</b></p>
+      </div>
+    </div>
+    <div class="mt-2">
+      <p class="m-0">Grades:</p>
+      <ul>
+        <li>Math: <b>{{ data.grades.Math }}</b></li>
+        <li>Science: <b>{{ data.grades.Science }}</b></li>
+        <li>English: <b>{{ data.grades.English }}</b></li>
+        <li>History: <b>{{ data.grades.History }}</b></li>
+      </ul>
+    </div>
+  </div>
+</div>
+    
+
+
+
