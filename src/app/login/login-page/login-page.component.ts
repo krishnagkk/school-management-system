@@ -38,11 +38,14 @@ export class LoginPageComponent {
         user.username === email && user.password === password);
         
       if(userDetails){
+        // const token = 'abcdef'
+        // userDetails.token = token;
+        // localStorage.setItem('userDetails', JSON.stringify(userDetails));
         console.log('user login successful');
-        this.router.navigate(['./login/Home'])
+        this.router.navigate(['./Home'])
         
       }else{
-        this.errorMessage = 'Invalid User Details'
+        this.errorMessage = 'Invalid User Details.'
       }
     })
   }

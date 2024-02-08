@@ -152,13 +152,16 @@ export class HomeComponent {
     });
   }
  
+  logOut(){
+    
+  }
 
   onSubmit(){
     if (this.selectForm.valid) {
       const selectedYear = this.selectForm.get('selectedYear')?.value;
       const selectedClass = this.selectForm.get('selectedClass')?.value;
        
-      this.dataSource.data = this.classes.filter(cls=> cls.year === selectedYear)
+      this.dataSource.data = this.classes.filter(cls=> cls.year === selectedYear && cls.class_name === selectedClass)
       console.log(this.dataSource.data,'filter student data');
       
       this.isFormValid = true;

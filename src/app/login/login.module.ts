@@ -13,6 +13,8 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatTableModule} from '@angular/material/table'; 
 import {MatIconModule} from '@angular/material/icon';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceService } from './service.service';
@@ -41,7 +43,9 @@ import { ViewStudentDialogComponent } from './view-student-dialog/view-student-d
     MatSelectModule,
     MatTableModule,
     MatIconModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCardModule,
+    MatToolbarModule
   ],
   providers: [ServiceService]
 })

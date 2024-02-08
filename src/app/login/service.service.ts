@@ -35,6 +35,7 @@ export class ServiceService {
         "class_name": "LKG-A",
         "year": "LKG",
         "image": "../assets/photo1.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -49,6 +50,7 @@ export class ServiceService {
         "class_name": "LKG-B",
         "year": "LKG",
         "image": "../assets/photo2.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -63,6 +65,7 @@ export class ServiceService {
         "class_name": "UKG-A",
         "year": "UKG",
         "image": "../assets/photo3.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -77,6 +80,7 @@ export class ServiceService {
         "class_name": "UKG-B",
         "year": "UKG",
         "image": "../assets/photo4.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -91,6 +95,7 @@ export class ServiceService {
         "class_name": "1-A",
         "year": "2022",
         "image": "../assets/photo5.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -105,6 +110,7 @@ export class ServiceService {
         "class_name": "1-B",
         "year": "2022",
         "image": "../assets/photo6.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -119,6 +125,7 @@ export class ServiceService {
         "class_name": "2-A",
         "year": "2021",
         "image": "../assets/photo7.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -133,6 +140,7 @@ export class ServiceService {
         "class_name": "2-B",
         "year": "2021",
         "image": "../assets/photo8.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -147,6 +155,7 @@ export class ServiceService {
         "class_name": "3-A",
         "year": "2020",
         "image": "../assets/photo9.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -161,6 +170,7 @@ export class ServiceService {
         "class_name": "3-B",
         "year": "2020",
         "image": "../assets/photo10.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -175,6 +185,7 @@ export class ServiceService {
         "class_name": "4-A",
         "year": "2019",
         "image": "../assets/photo12.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -189,6 +200,7 @@ export class ServiceService {
         "class_name": "4-B",
         "year": "2019",
         "image": "../assets/photo13.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -203,6 +215,7 @@ export class ServiceService {
         "class_name": "5-A",
         "year": "2018",
         "image": "../assets/photo4.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -217,6 +230,7 @@ export class ServiceService {
         "class_name": "5-B",
         "year": "2018",
         "image": "../assets/photo1.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -231,6 +245,7 @@ export class ServiceService {
         "class_name": "6-A",
         "year": "2017",
         "image": "../assets/photo10.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -245,6 +260,7 @@ export class ServiceService {
         "class_name": "6-B",
         "year": "2017",
         "image": "../assets/photo11.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -259,6 +275,7 @@ export class ServiceService {
         "class_name": "7-A",
         "year": "2016",
         "image": "../assets/photo8.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -273,6 +290,7 @@ export class ServiceService {
         "class_name": "7-B",
         "year": "2016",
         "image": "../assets/photo5.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -287,6 +305,7 @@ export class ServiceService {
         "class_name": "8-A",
         "year": "2015",
         "image": "../assets/photo9.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -301,6 +320,7 @@ export class ServiceService {
         "class_name": "8-B",
         "year": "2015",
         "image": "../assets/photo6.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -315,6 +335,7 @@ export class ServiceService {
         "class_name": "9-A",
         "year": "2014",
         "image": "../assets/photo4.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -329,6 +350,7 @@ export class ServiceService {
         "class_name": "9-B",
         "year": "2014",
         "image": "../assets/photo13.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -343,6 +365,7 @@ export class ServiceService {
         "class_name": "10-A",
         "year": "2013",
         "image": "../assets/photo2.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
@@ -357,6 +380,7 @@ export class ServiceService {
         "class_name": "10-B",
         "year": "2013",
         "image": "../assets/photo7.jpeg",
+        "mobile": "9876544162",
         "grades": {
           "Math": "A",
           "Science": "B",
