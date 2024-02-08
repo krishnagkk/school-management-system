@@ -1,5 +1,5 @@
 <!-- student-modal.component.html -->
-<div>
+<div class="p-2">
   <h2 mat-dialog-title class="text-center">{{ data.name }}</h2>
   <div mat-dialog-content>
     <div class="d-flex justify-content-between">
@@ -22,6 +22,9 @@
         <li>History: <b>{{ data.grades.History }}</b></li>
       </ul>
     </div>
+  </div>
+  <div mat-dialog-actions align="end">
+      <button mat-raised-button color="warn" type="submit" (click)="onCancel()">Close</button>
   </div>
 </div>
     
