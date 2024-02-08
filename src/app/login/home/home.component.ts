@@ -6,6 +6,7 @@ import { AddStudentDialogComponent } from '../add-student-dialog/add-student-dia
 import { MatDialog } from '@angular/material/dialog';
 import { EditStudentDialogComponent } from '../edit-student-dialog/edit-student-dialog.component';
 import { ViewStudentDialogComponent } from '../view-student-dialog/view-student-dialog.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -29,7 +30,7 @@ export class HomeComponent {
   filteredClass: any[] = [];
   element: any;
 
-  constructor(private fb:FormBuilder, private studentService:ServiceService,private dialog: MatDialog){
+  constructor(private fb:FormBuilder, private studentService:ServiceService,private dialog: MatDialog, private router:Router){
     this.selectForm = this.fb.group({
       selectedType: ['', Validators.required],  
       selectedYear: ['', Validators.required],  
@@ -153,7 +154,9 @@ export class HomeComponent {
   }
  
   logOut(){
-    
+    localStorage.removeItem('token');
+    localStorage.removeItem('userDetails');
+    this.router.navigate(['./login'])
   }
 
   onSubmit(){

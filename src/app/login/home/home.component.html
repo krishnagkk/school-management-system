@@ -5,6 +5,13 @@
   <img src="../assets/logo.png" alt="" height="50px">
   <!-- <span>St Annes School</span> -->
   <span class="example-spacer"></span>
+  <div class="d-flex" style="margin-right: 20px;">
+    <a style="color: #fff;">About Us</a>
+    <a style="color: #fff;margin-left: 10px;">Admissions</a>
+    <a style="color: #fff;margin-left: 10px;">Academics</a>
+    <a style="color: #fff;margin-left: 10px;">Campus Life</a>
+  </div>
+  <span style="font-size: medium;">Logout</span>
   <button mat-icon-button class="example-icon favorite-icon" (click)="logOut()">
     <mat-icon>logout</mat-icon>
   </button>
@@ -14,9 +21,9 @@
 </mat-toolbar>
 <div class="m-4">
 <!-- Filter 1: Primary or Secondary -->
-<form [formGroup]="selectForm"> 
+<form [formGroup]="selectForm" class="d-flex justify-center"> 
   <mat-icon class="icon-size">filter_alt</mat-icon>
-  <mat-form-field  style="margin-left: 20px;">
+  <mat-form-field class="form-field">
     <mat-label>Primary or Secondary:</mat-label>
     <mat-select formControlName="selectedType" (selectionChange)="onTypeChange()">
       <mat-option *ngFor="let types of primarySecondary" [value]="types.value">{{types.name}}</mat-option>
@@ -25,7 +32,7 @@
   </mat-form-field>
 
   <!-- Filter 2: Year Number -->
-  <mat-form-field  style="margin-left: 20px;">
+  <mat-form-field class="form-field">
     <mat-label>Year</mat-label>
     <mat-select formControlName="selectedYear" (selectionChange)="onYearChange()">
       <mat-option *ngFor="let year of filteredYears" [value]="year.value">{{year.name}}</mat-option>
@@ -34,7 +41,7 @@
   </mat-form-field>
 
   <!-- Filter 3: List of classes for each year -->
-  <mat-form-field style="margin-left: 20px;">
+  <mat-form-field class="form-field">
     <mat-label>Classes</mat-label>
     <mat-select formControlName="selectedClass" (selectionChange)="onClassChange()">
       <mat-option *ngFor="let class of filteredClass" [value]="class.class_name">{{class.class_name}}</mat-option>

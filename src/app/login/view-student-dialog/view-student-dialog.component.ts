@@ -1,5 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-view-student-dialog',
@@ -8,10 +8,13 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class ViewStudentDialogComponent {
   
-  constructor(@Inject(MAT_DIALOG_DATA) public data: any) { }
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any, public dialogRef: MatDialogRef<any>) { }
 
   ngOnInit(){
     // console.log(this.data,'view detail');
     
+  }
+  onCancel(){
+    this.dialogRef.close();
   }
 }
