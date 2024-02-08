@@ -11,7 +11,7 @@ export class ViewStudentDialogComponent {
   constructor(@Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit(){
-    console.log(this.data,'view detail');
+    // console.log(this.data,'view detail');
     
   }
 }

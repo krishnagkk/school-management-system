@@ -22,7 +22,7 @@ export class AddStudentDialogComponent {
       class_name: ['',Validators.required],
       roll_no: ['',Validators.required],
       year: ['',Validators.required],
-      contactDetails: ['',Validators.required],
+      mobile: ['',Validators.required],
       // grades: this.fb.group({
         Math: ['',Validators.required],
         Science: ['',Validators.required],
@@ -41,7 +41,7 @@ export class AddStudentDialogComponent {
       this.isFormValid = true;
       this.newStudentDetails = this.studentForm.value;
       // this.newStudentDetails.push(this.studentForm.value);
-      console.log(this.newStudentDetails,'excisting');
+      // console.log(this.newStudentDetails,'excisting');
       this.dialogRef.close(this.newStudentDetails);
     } else{
        return;
