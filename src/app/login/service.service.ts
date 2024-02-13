@@ -15,19 +15,19 @@ export class ServiceService {
   years:any = [
     { primarySecondary:'Primary', name:'LKG', value:'LKG'},
     { primarySecondary:'Primary', name:'UKG', value:'UKG'},
-    { primarySecondary:'Primary', name:'2022', value:'2022'},
-    { primarySecondary:'Primary', name:'2021', value:'2021'},
-    { primarySecondary:'Primary', name:'2020', value:'2020'},
-    { primarySecondary:'Primary', name:'2019', value:'2019'},
-    { primarySecondary:'Primary', name:'2018', value:'2018'},
-    { primarySecondary:'Secondary', name:'2017', value:'2017'},
-    { primarySecondary:'Secondary', name:'2016', value:'2016'},
-    { primarySecondary:'Secondary', name:'2015', value:'2015'},
-    { primarySecondary:'Secondary', name:'2014', value:'2014'},
-    { primarySecondary:'Secondary', name:'2013', value:'2013'},
+    { primarySecondary:'Primary', name:'1st Standard', value:'1st Standard'},
+    { primarySecondary:'Primary', name:'2nd Standard', value:'2nd Standard'},
+    { primarySecondary:'Primary', name:'3rd Standard', value:'3rd Standard'},
+    { primarySecondary:'Primary', name:'4th Standard', value:'4th Standard'},
+    { primarySecondary:'Primary', name:'5th Standard', value:'5th Standard'},
+    { primarySecondary:'Secondary', name:'6th Standard', value:'6th Standard'},
+    { primarySecondary:'Secondary', name:'7th Standard', value:'7th Standard'},
+    { primarySecondary:'Secondary', name:'8th Standard', value:'8th Standard'},
+    { primarySecondary:'Secondary', name:'9th Standard', value:'9th Standard'},
+    { primarySecondary:'Secondary', name:'10th Standard', value:'10th Standard'},
   ]
 
-  classes: any = [
+  students: any = [
       {
         "id": "1",
         "name": "Anthony Das",
@@ -93,7 +93,7 @@ export class ServiceService {
         "name": "Amanpreet",
         "roll_no": "131",
         "class_name": "1-A",
-        "year": "2022",
+        "year": "1st Standard",
         "image": "../assets/photo5.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -108,7 +108,7 @@ export class ServiceService {
         "name": "Apurva ",
         "roll_no": "066",
         "class_name": "1-B",
-        "year": "2022",
+        "year": "1st Standard",
         "image": "../assets/photo6.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -123,7 +123,7 @@ export class ServiceService {
         "name": "Ashwini",
         "roll_no": "031",
         "class_name": "2-A",
-        "year": "2021",
+        "year": "2nd Standard",
         "image": "../assets/photo7.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -138,7 +138,7 @@ export class ServiceService {
         "name": "Chaitanya",
         "roll_no": "129",
         "class_name": "2-B",
-        "year": "2021",
+        "year": "2nd Standard",
         "image": "../assets/photo8.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -153,7 +153,7 @@ export class ServiceService {
         "name": "Deepal",
         "roll_no": "111",
         "class_name": "3-A",
-        "year": "2020",
+        "year": "3rd Standard",
         "image": "../assets/photo9.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -168,7 +168,7 @@ export class ServiceService {
         "name": "Shree ",
         "roll_no": "061",
         "class_name": "3-B",
-        "year": "2020",
+        "year": "3rd Standard",
         "image": "../assets/photo10.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -183,7 +183,7 @@ export class ServiceService {
         "name": "Suman",
         "roll_no": "021",
         "class_name": "4-A",
-        "year": "2019",
+        "year": "4th Standard",
         "image": "../assets/photo12.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -198,7 +198,7 @@ export class ServiceService {
         "name": "Harpreet",
         "roll_no": "066",
         "class_name": "4-B",
-        "year": "2019",
+        "year": "4th Standard",
         "image": "../assets/photo13.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -213,7 +213,7 @@ export class ServiceService {
         "name": "Gauhar",
         "roll_no": "019",
         "class_name": "5-A",
-        "year": "2018",
+        "year": "5th Standard",
         "image": "../assets/photo4.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -228,7 +228,7 @@ export class ServiceService {
         "name": "Mrinal",
         "roll_no": "012",
         "class_name": "5-B",
-        "year": "2018",
+        "year": "5th Standard",
         "image": "../assets/photo1.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -243,7 +243,7 @@ export class ServiceService {
         "name": "Nayan",
         "roll_no": "107",
         "class_name": "6-A",
-        "year": "2017",
+        "year": "6th Standard",
         "image": "../assets/photo10.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -258,7 +258,7 @@ export class ServiceService {
         "name": "Shalin",
         "roll_no": "112",
         "class_name": "6-B",
-        "year": "2017",
+        "year": "6th Standard",
         "image": "../assets/photo11.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -273,7 +273,7 @@ export class ServiceService {
         "name": "Rajani",
         "roll_no": "111",
         "class_name": "7-A",
-        "year": "2016",
+        "year": "7th Standard",
         "image": "../assets/photo8.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -288,7 +288,7 @@ export class ServiceService {
         "name": "Kiran",
         "roll_no": "156",
         "class_name": "7-B",
-        "year": "2016",
+        "year": "7th Standard",
         "image": "../assets/photo5.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -303,7 +303,7 @@ export class ServiceService {
         "name": "Jiva",
         "roll_no": "121",
         "class_name": "8-A",
-        "year": "2015",
+        "year": "8th Standard",
         "image": "../assets/photo9.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -318,7 +318,7 @@ export class ServiceService {
         "name": "Jaspinder",
         "roll_no": "106",
         "class_name": "8-B",
-        "year": "2015",
+        "year": "8th Standard",
         "image": "../assets/photo6.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -333,7 +333,7 @@ export class ServiceService {
         "name": "Harsha",
         "roll_no": "101",
         "class_name": "9-A",
-        "year": "2014",
+        "year": "9th Standard",
         "image": "../assets/photo4.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -348,7 +348,7 @@ export class ServiceService {
         "name": "Hemal",
         "roll_no": "106",
         "class_name": "9-B",
-        "year": "2014",
+        "year": "9th Standard",
         "image": "../assets/photo13.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -363,7 +363,7 @@ export class ServiceService {
         "name": "Harpreet",
         "roll_no": "108",
         "class_name": "10-A",
-        "year": "2013",
+        "year": "10th Standard",
         "image": "../assets/photo2.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -378,7 +378,7 @@ export class ServiceService {
         "name": "Chandra",
         "roll_no": "1006",
         "class_name": "10-B",
-        "year": "2013",
+        "year": "10th Standard",
         "image": "../assets/photo7.jpeg",
         "mobile": "9876544162",
         "grades": {
@@ -407,7 +407,7 @@ export class ServiceService {
     return this.years
   }
   getStudentDetails(){
-    return this.classes
+    return this.students
   }
 
 }

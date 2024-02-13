@@ -29,6 +29,7 @@ export class HomeComponent {
   filteredYears: any[] = [];
   filteredClass: any[] = [];
   element: any;
+  addedClass: any;
 
   constructor(private fb:FormBuilder, private studentService:ServiceService,private dialog: MatDialog, private router:Router){
     this.selectForm = this.fb.group({
@@ -42,7 +43,7 @@ export class HomeComponent {
       name: ['', Validators.required],
       roll_no: ['', Validators.required],
       class_name: ['', Validators.required],
-      year: ['', Validators.required]
+      year: ['', Validators.required],
     })
 
     this.selectForm.valueChanges.subscribe(() => {
@@ -80,7 +81,7 @@ export class HomeComponent {
   addStudent(){
     const dialogRef = this.dialog.open(AddStudentDialogComponent, {
       width:'40%',
-      data: {} 
+      data: {data:this.dataSource.data,filteredClass: this.filteredClass} 
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -103,14 +104,13 @@ export class HomeComponent {
 
   editStudent(element:any){
     element.editMode = !element.editMode;
-
     if (element.editMode) {
       this.editForm.setValue({
         image: element.image,
         name: element.name,
         roll_no: element.roll_no,
         class_name: element.class_name,
-        year: element.year
+        year: element.year,
       });
     }
   }
@@ -127,6 +127,10 @@ export class HomeComponent {
       // Toggle off edit mode after saving changes
       element.editMode = false;
     }
+    this.addedClass = element.class_name;
+    if (!this.filteredClass.find(c => c.class_name === this.addedClass)) {
+      this.filteredClass.push({ class_name: this.addedClass });
+    }    
   }
 
   cancelEditMode(element: any) {
