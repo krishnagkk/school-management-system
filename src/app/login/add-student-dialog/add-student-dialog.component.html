@@ -2,10 +2,12 @@
     <h2>Add Student</h2>
     <div class="d-flex justify-content-between">
         <mat-form-field>
+        <mat-label>Full Name</mat-label>
             <input type="text" matInput placeholder="Full Name" formControlName="name">
         <mat-error *ngIf="studentForm.get('name')?.hasError('required')">Enter Name</mat-error>
         </mat-form-field>
         <mat-form-field>
+        <mat-label>Father Name</mat-label>
               <input type="text" matInput placeholder="Father Name" formControlName="fatherName">
         <mat-error *ngIf="studentForm.get('fatherName')?.hasError('required')">Enter Father Name</mat-error>
         </mat-form-field>
@@ -13,40 +15,54 @@
     
     <div class="d-flex justify-content-between">
         <mat-form-field>
-            <input type="text" matInput placeholder="Class" formControlName="class_name">
+            <mat-label>Year</mat-label>
+            <mat-select formControlName="year">
+                <mat-option *ngFor="let types of data.data" [value]="types.year">{{types.year}}</mat-option>
+            </mat-select>
+            <!-- <input type="text" matInput placeholder="Class" formControlName="class_name"> -->
         <mat-error *ngIf="studentForm.get('class_name')?.hasError('required')">Enter Class</mat-error>
         </mat-form-field>
         <mat-form-field>
+        <mat-label>Roll No</mat-label>
           <input type="text" matInput placeholder="Roll Number" formControlName="roll_no">
         <mat-error *ngIf="studentForm.get('roll_no')?.hasError('required')">Enter Roll No</mat-error>
         </mat-form-field>
     </div>
     <div class="d-flex justify-content-between">
         <mat-form-field>
-            <input type="text" matInput placeholder="Year" formControlName="year">
+            <mat-label>Class</mat-label>
+            <mat-select formControlName="class_name">
+                <mat-option *ngFor="let types of data.filteredClass" [value]="types.class_name">{{types.class_name}}</mat-option>
+            </mat-select>
+            <!-- <input type="text" matInput placeholder="Year" formControlName="year"> -->
         <mat-error *ngIf="studentForm.get('year')?.hasError('required')">Enter Year</mat-error>
         </mat-form-field>
         <mat-form-field>
-            <input type="tel" matInput placeholder="Contact Details" formControlName="mobile">
+        <mat-label>Contact Details</mat-label>
+            <input type="tel" matInput placeholder="Contact Details" formControlName="mobile" maxlength="10">
         <mat-error *ngIf="studentForm.get('mobile')?.hasError('required')">Enter Contact Details</mat-error>
         </mat-form-field>
     </div>
     <div class="d-flex justify-content-between">
         <mat-form-field>
+        <mat-label>Enter Grade</mat-label>
             <input type="text" matInput placeholder="Math Grade" formControlName="Math">
         <mat-error *ngIf="studentForm.get('Math')?.hasError('required')">Enter Grade</mat-error>
         </mat-form-field>
         <mat-form-field>
+        <mat-label>Enter Grade</mat-label>
             <input type="text" matInput placeholder="Science Grade" formControlName="Science">
         <mat-error *ngIf="studentForm.get('Science')?.hasError('required')">Enter Grade</mat-error>
         </mat-form-field>
     </div>
     <div class="d-flex justify-content-between">
         <mat-form-field>
+        <mat-label>Enter Grade</mat-label>
             <input type="text" matInput placeholder="English Grade" formControlName="English">
         <mat-error *ngIf="studentForm.get('English')?.hasError('required')">Enter Grade</mat-error>
         </mat-form-field>
         <mat-form-field>
+        <mat-label>Enter Grade</mat-label>
             <input type="text" matInput placeholder="History Grade" formControlName="History">
         <mat-error *ngIf="studentForm.get('History')?.hasError('required')">Enter Grade</mat-error>
         </mat-form-field>

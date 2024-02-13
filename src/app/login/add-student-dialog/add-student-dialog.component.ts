@@ -13,9 +13,12 @@ export class AddStudentDialogComponent {
   isFormValid: boolean = false; 
   newStudentDetails: any={};
   selectedImage?: string | ArrayBuffer | null;
+  studentDetails: any;
 
   constructor(private fb:FormBuilder, private studentService:ServiceService, public dialogRef: MatDialogRef<AddStudentDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any, ){
+      console.log(data,'add stusednrs');
+      
     this.studentForm = this.fb.group({
       name: ['',Validators.required],
       fatherName: ['',Validators.required],
@@ -35,6 +38,8 @@ export class AddStudentDialogComponent {
       this.isFormValid = this.studentForm.valid;
     });
   }
+
+  ngOnInit(){}
 
   onAddStudent(){
     if(this.studentForm.valid){
